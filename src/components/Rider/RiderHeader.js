@@ -1,0 +1,63 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { FaCar, FaClipboardList, FaCheck, FaWallet, FaBell, FaUser, FaSignOutAlt, FaHome } from 'react-icons/fa';
+import { useAuth0 } from '@auth0/auth0-react';
+
+const RiderHeader = () => {
+  const { isAuthenticated, logout } = useAuth0();
+
+  const handleLogout = () => {
+    logout({ returnTo: window.location.origin });
+  };
+
+  return (
+    <nav className="bg-gray-800 p-4">
+      <div className="container mx-auto flex items-center justify-between">
+        <Link to="/" className="text-white text-xl font-bold">
+          Equal Wheels
+        </Link>
+        <div className="space-x-4">
+        <Link to="/rider-home" className="text-white hover:text-gray-300">
+            <FaHome className="inline-block mr-2" />
+            Home
+          </Link>
+          <Link to="/rider-history" className="text-white hover:text-gray-300">
+            <FaCar className="inline-block mr-2" />
+            My Rides
+          </Link>
+          <Link to="/rider-request-form" className="text-white hover:text-gray-300">
+            <FaClipboardList className="inline-block mr-2" />
+            Ride Requests
+          </Link>
+          {/* <Link to="/driver-accepted-rides" className="text-white hover:text-gray-300">
+            <FaCheck className="inline-block mr-2" />
+            Accepted Rides
+          </Link> */}
+          <Link to="https://buy.stripe.com/test_14kaG70UHct3fWUaEE" className="text-white hover:text-gray-300">
+            <FaWallet className="inline-block mr-2" />
+            Payments
+          </Link>
+          <Link to="/rider-notifications" className="text-white hover:text-gray-300">
+            <FaBell className="inline-block mr-2" />
+            Notifications
+          </Link>
+          <Link to="/rider-profile" className="text-white hover:text-gray-300">
+            <FaUser className="inline-block mr-2" />
+            Profile
+          </Link>
+          {isAuthenticated ? (
+            <button
+              onClick={handleLogout}
+              className="text-white hover:text-gray-300 cursor-pointer"
+            >
+              <FaSignOutAlt className="inline-block mr-2" />
+              Logout
+            </button>
+          ) : null}
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default RiderHeader;

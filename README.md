@@ -1,7 +1,7 @@
 <div>
 <div align='center'>
 <h1>EQUAL WHEELS</h1>
-<img src = "https://github.com/vaishnavi-3969/Equal-Wheels/assets/80088403/bb814bf1-194e-4b9c-87c5-d89c851beeca" height="300px"/>
+<img src = "https://github.com/vaishnavi-3969/Equal-Wheels/assets/80088403/3216034b-1f81-4168-9572-dc8dfa2877d6" height="300px"/>
 <h1>Problem Statmeent</h1>
 </div>
 <p>Create a ride-sharing app that focuses on empowering and supporting marginalized genders in accessing safe, reliable, and affordable transportation options. The app aims to provide a platform where women and marginalized genders can feel confident and secure when using transportation services, whether as drivers or passengers.</p>

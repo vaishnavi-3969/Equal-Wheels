@@ -1,6 +1,10 @@
+<div>
 <div align='center'>
-
-<h2>Create a ride-sharing app that focuses on empowering and supporting marginalized genders in accessing safe, reliable, and affordable transportation options. The app aims to provide a platform where women and marginalized genders can feel confident and secure when using transportation services, whether as drivers or passengers.</h2>
+<h1>EQUAL WHEELS</h1>
+<img src = "https://github.com/vaishnavi-3969/Equal-Wheels/assets/80088403/bb814bf1-194e-4b9c-87c5-d89c851beeca" height="300px"/>
+<h1>Problem Statmeent</h1>
+</div>
+<p>Create a ride-sharing app that focuses on empowering and supporting marginalized genders in accessing safe, reliable, and affordable transportation options. The app aims to provide a platform where women and marginalized genders can feel confident and secure when using transportation services, whether as drivers or passengers.</p>
 <h1>Features</h1>
 <p>Features:
 
@@ -21,8 +25,9 @@
 8. Community Support: Create a community support system where users can share experiences, tips, and resources related to transportation safety.
 
 9. Accessibility: Ensure the app is accessible and user-friendly to accommodate a diverse range of users.
-    
-    
 </p>
+<h2>Tools and Technologies used</h2>
+     <img src="https://skillicons.dev/icons?i=github,git,react,tailwind,html,css,js,vscode,firebase"/>
+<p>
 
 </div>
